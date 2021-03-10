@@ -33,6 +33,7 @@ namespace MarchMadness.Data
             return new ApplicationDbContext();
         }
         public DbSet<Team> Teams { get; set; }
+        public DbSet<Coach> Coach { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder

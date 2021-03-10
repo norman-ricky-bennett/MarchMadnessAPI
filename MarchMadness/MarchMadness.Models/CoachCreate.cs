@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MarchMadness.Models
 {
-    class CoachCreate
+    public class CoachCreate
     {
 
     }
