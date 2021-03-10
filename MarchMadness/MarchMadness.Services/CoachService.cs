@@ -20,10 +20,10 @@ namespace MarchMadness.Services
             var entity =
                 new Coach()
                 {
-                    CoachId = _coachId,
                     CoachName = model.CoachName,
                     SeasonRecord = model.SeasonRecord,
-                    CreatedUtc = DateTimeOffset.Now
+                    OverallRecord = model.OverallRecord,
+                    MarchMadnessRecord = model.MarchMadnessRecord,
                 };
 
             using (var ctx = new ApplicationDbContext())
@@ -44,8 +44,11 @@ namespace MarchMadness.Services
                             e =>
                                 new CoachListItem
                                 {
-                                    CoachId = e.CoachId,
+                                    CoachID = e.CoachId,
                                     CoachName = e.CoachName,
+                                    SeasonRecord = e.SeasonRecord,
+                                    OverallRecord = e.OverallRecord,
+                                    MarchMadnessRecord = e.MarchMadnessRecord,
                                 }
                         );
 
