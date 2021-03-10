@@ -10,11 +10,13 @@ namespace MarchMadness.Data
     public class Team
     {
         [Key]
-        public int Id { get; set; }
+        public int TeamId { get; set; }
+        [Required]
+        public Guid OwnerId { get; set; }
         [Required]
         public string TeamName { get; set; }
         [Required]
-        public int Seed { get; set; }
+        public int TeamSeed { get; set; }
         [Required]
         public int Coachname_Id { get; set; }
         [Required]
