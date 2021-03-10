@@ -27,12 +27,16 @@ namespace MarchMadness.Data
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-        
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Player> Players { get; set; }
+
         public DbSet<Team> Teams { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder
@@ -44,7 +48,6 @@ namespace MarchMadness.Data
                 .Add(new IdentityUserLoginConfiguration())
                 .Add(new IdentityUserRoleConfiguration());
         }
-    }
 }
     public class IdentityUserLoginConfiguration : EntityTypeConfiguration<IdentityUserLogin>
     {
