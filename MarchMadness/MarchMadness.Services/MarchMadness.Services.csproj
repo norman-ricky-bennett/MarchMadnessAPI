@@ -54,11 +54,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CoachService.cs" />
+    <Compile Include="PlayerService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MarchMadness.Data\MarchMadness.Data.csproj">
+      <Project>{3390d136-0b41-47bb-9e6a-edb99dd9c0dd}</Project>
+      <Name>MarchMadness.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MarchMadness.Models\MarchMadness.Models.csproj">
+      <Project>{43661bad-2f93-47bb-9549-0b3d9934079d}</Project>
+      <Name>MarchMadness.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
