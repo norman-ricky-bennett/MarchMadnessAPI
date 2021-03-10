@@ -16,6 +16,7 @@ using Microsoft.Owin.Security.OAuth;
 using MarchMadnessAPI.Models;
 using MarchMadnessAPI.Providers;
 using MarchMadnessAPI.Results;
+using MarchMadness.Data;
 
 namespace MarchMadnessAPI.Controllers
 {

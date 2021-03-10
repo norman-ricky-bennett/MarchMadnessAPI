@@ -32,7 +32,11 @@ namespace MarchMadness.Data
         {
             return new ApplicationDbContext();
         }
+
         public DbSet<Player> Players { get; set; }
+
+        public DbSet<Team> Teams { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder
@@ -44,8 +48,7 @@ namespace MarchMadness.Data
                 .Add(new IdentityUserLoginConfiguration())
                 .Add(new IdentityUserRoleConfiguration());
         }
-    }
-
+}
     public class IdentityUserLoginConfiguration : EntityTypeConfiguration<IdentityUserLogin>
     {
         public IdentityUserLoginConfiguration()
@@ -53,7 +56,6 @@ namespace MarchMadness.Data
             HasKey(iul => iul.UserId);
         }
     }
-
     public class IdentityUserRoleConfiguration : EntityTypeConfiguration<IdentityUserRole>
     {
         public IdentityUserRoleConfiguration()
@@ -61,4 +63,3 @@ namespace MarchMadness.Data
             HasKey(iur => iur.UserId);
         }
     }
-}

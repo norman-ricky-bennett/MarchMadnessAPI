@@ -6,6 +6,6 @@ March Madness API
 
 Contributors:
 
-Sterling Cole
-Zuri Rojas
-Norman "Ricky" Bennett
+-Sterling Cole
+-Zuri Rojas
+-Norman "Ricky" Bennett
