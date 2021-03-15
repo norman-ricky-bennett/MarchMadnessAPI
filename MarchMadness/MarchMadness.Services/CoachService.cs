@@ -55,5 +55,41 @@ namespace MarchMadness.Services
                 return query.ToArray();
             }
         }
+
+        public bool UpdateCoach(CoachEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Coach
+                        .Single(e => e.CoachName == model.CoachName && e.OwnerId == _userId);
+
+                entity.CoachName = model.CoachName;
+                entity.SeasonRecord = model.SeasonRecord;
+                entity.OverallRecord = model.OverallRecord;
+                entity.MarchMadnessRecord = model.MarchMadnessRecord;
+
+
+                return ctx.SaveChanges() == 1;
+
+
+            }
+        }
+
+        public bool DeleteCoach(int coachId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Coach
+                        .Single(e => e.CoachId == coachId && e.OwnerId == _userId);
+
+                ctx.Coach.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
     }
 }
