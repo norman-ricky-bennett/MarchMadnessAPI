@@ -50,7 +50,7 @@ namespace MarchMadness.Data
                 .Add(new IdentityUserLoginConfiguration())
                 .Add(new IdentityUserRoleConfiguration());
         }
-}
+    }
     public class IdentityUserLoginConfiguration : EntityTypeConfiguration<IdentityUserLogin>
     {
         public IdentityUserLoginConfiguration()
@@ -65,3 +65,4 @@ namespace MarchMadness.Data
             HasKey(iur => iur.UserId);
         }
     }
+}
