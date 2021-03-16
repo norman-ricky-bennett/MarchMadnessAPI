@@ -16,10 +16,10 @@ namespace MarchMadness.Data
         [Required]
         public string CoachName { get; set; }
         [Required]
-        public int SeasonRecord { get; set; }
+        public string SeasonRecord { get; set; }
         [Required]
-        public int OverallRecord { get; set; }
+        public string OverallRecord { get; set; }
         [Required]
-        public int MarchMadnessRecord { get; set; }
+        public string MarchMadnessRecord { get; set; }
     }
 }
