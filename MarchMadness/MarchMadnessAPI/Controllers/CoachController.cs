@@ -24,14 +24,37 @@ namespace MarchMadnessAPI.Controllers
             var coach = coachService.GetCoach();
             return Ok(coach);
         }
-        public IHttpActionResult Coach(CoachCreate note)
+        public IHttpActionResult Coach(CoachCreate coach)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
             var service = CreateCoachService();
 
-            if (!service.CreateCoach(note))
+            if (!service.CreateCoach(coach))
+                return InternalServerError();
+
+            return Ok();
+        }
+
+        public IHttpActionResult Put(CoachEdit coach)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var service = CreateCoachService();
+
+            if (!service.UpdateCoach(coach))
+                return InternalServerError();
+
+            return Ok();
+        }
+
+        public IHttpActionResult Delete(int id)
+        {
+            var service = CreateCoachService();
+
+            if (!service.DeleteCoach(id))
                 return InternalServerError();
 
             return Ok();
