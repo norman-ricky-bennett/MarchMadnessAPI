@@ -27,5 +27,7 @@ namespace MarchMadness.Data
 
         [Required]
         public int SeasonTotalPoints { get; set; }
+        [Required]
+        public int TeamId { get; set; }
     }
 }

@@ -23,6 +23,7 @@ namespace MarchMadness.Data
         public int Stadium_Id { get; set; }
         [Required]
         public int Game_Id { get; set; }
+        
        
 
     }
