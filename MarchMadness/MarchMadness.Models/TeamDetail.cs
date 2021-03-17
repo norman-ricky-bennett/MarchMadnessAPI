@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace MarchMadness.Models
 {
-    public class TeamCreate
+    public class TeamDetail
     {
-        [Required]
+        public int TeamId { get; set; }
         public string TeamName { get; set; }
-        [Required]
         public int TeamSeed { get; set; }
-       
+        public List<PlayerListItem> Players { get; set; }
     }
 }

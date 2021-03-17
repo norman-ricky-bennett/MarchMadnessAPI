@@ -66,6 +66,8 @@
     <Compile Include="StadiumDetail.cs" />
     <Compile Include="StadiumListItem.cs" />
     <Compile Include="TeamCreate.cs" />
+    <Compile Include="TeamDetail.cs" />
+    <Compile Include="TeamEdit.cs" />
     <Compile Include="TeamListItem.cs" />
   </ItemGroup>
   <ItemGroup>
