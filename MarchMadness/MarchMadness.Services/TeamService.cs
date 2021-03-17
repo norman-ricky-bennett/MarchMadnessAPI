@@ -71,7 +71,13 @@ namespace MarchMadness.Services
                         Players = 
                         ctx
                         .Players
-                        .Where(e => e.TeamId == TeamId)
+                        .Where(p => p.TeamId == entity.TeamId)
+                        .Select(p =>
+                            new PlayerListItem
+                            {
+                               
+                            }
+                        ).ToList()
                         //List of PlayerListItem as a prop in TeamDetail
                         //Add TeamId to your Player class
                         //Do a nested query here.
