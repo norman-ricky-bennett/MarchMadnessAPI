@@ -89,11 +89,8 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <Compile Include="Roster.cs" />
-=======
     <Compile Include="Stadium.cs" />
->>>>>>> c986fc7c2ed2c7c0f86b5ee5758da15bba16cbed
     <Compile Include="Team.cs" />
   </ItemGroup>
   <ItemGroup>
