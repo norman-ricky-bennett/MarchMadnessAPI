@@ -4,10 +4,10 @@ This is a Blue Badge Web API team project. This project uses C#/.NET to create
 a web API to track teams, stats, and games through March Madness. In this
 project we learned:
 
+* Planning and execution of a sprint using Agile methodology
+* How to collaborate as a team using GitHub to create an MVP
 * How to create API endpoints
 * How to test and debug APIs
-* How to collaborate as a team using GitHub to create an MVP
-* Planning and execution of a sprint using Agile methodology
 
 ## Project Links
 
