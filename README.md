@@ -11,7 +11,7 @@ project we learned:
 
 ## Project Links
 
-[Trello Board - Outlines sprint, MVP, and stretch goals](https://trello.com/b/HdoS2YrE/marchmadnessapi)
+[Trello Board - Outlines sprint, MVP, and stretch goals](https://trello.com/b/HdoS2YrE/marchmadnessapi)  
 [Database Diagram](https://dbdiagram.io/d/6042461afcdcb6230b22c920)
 
 ## Contributors
