@@ -77,6 +77,7 @@ namespace MarchMadness.Services
                             {
                                
                             }
+                        ).ToList()
                         ).ToList(),
                         Coach =
                         ctx

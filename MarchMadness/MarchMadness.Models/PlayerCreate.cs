@@ -11,6 +11,7 @@ namespace MarchMadness.Models
     {
         [Required]
         public string Name { get; set; }
+        public int TeamId { get; set; }
         public string Position { get; set; }
         public int SeasonRebounds { get; set; }
         public int SeasonAssists { get; set; }
