@@ -50,6 +50,7 @@ namespace MarchMadness.Services
                                     SeasonRecord = e.SeasonRecord,
                                     OverallRecord = e.OverallRecord,
                                     MarchMadnessRecord = e.MarchMadnessRecord,
+                                    TeamId = e.TeamId,
                                 }
                         );
 
