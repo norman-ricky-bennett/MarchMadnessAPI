@@ -24,6 +24,7 @@ namespace MarchMadness.Services
                     SeasonRecord = model.SeasonRecord,
                     OverallRecord = model.OverallRecord,
                     MarchMadnessRecord = model.MarchMadnessRecord,
+                    TeamId = model.TeamId,
                 };
 
             using (var ctx = new ApplicationDbContext())
@@ -49,6 +50,7 @@ namespace MarchMadness.Services
                                     SeasonRecord = e.SeasonRecord,
                                     OverallRecord = e.OverallRecord,
                                     MarchMadnessRecord = e.MarchMadnessRecord,
+                                    TeamId = e.TeamId,
                                 }
                         );
 
@@ -69,6 +71,7 @@ namespace MarchMadness.Services
                 entity.SeasonRecord = model.SeasonRecord;
                 entity.OverallRecord = model.OverallRecord;
                 entity.MarchMadnessRecord = model.MarchMadnessRecord;
+                entity.TeamId = model.TeamId;
 
 
                 return ctx.SaveChanges() == 1;
