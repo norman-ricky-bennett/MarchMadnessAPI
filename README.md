@@ -32,4 +32,4 @@ on localhost, you can begin testing endpoints in Postman.
 * [*Yatzuri Rojas*](https://www.linkedin.com/in/yatzuri-rojas-49939b209/)
 * [*Norman "Ricky" Bennett*](https://www.linkedin.com/in/norman-ricky-bennett/)
 
-#### [<span style="color:red">Eleven Fifty Academy</span>](https://elevenfifty.org/) - Software Development 76 - January 2021 to April 2021
+#### [Eleven Fifty Academy](https://elevenfifty.org/) - Software Development 76 - January 2021 to April 2021
