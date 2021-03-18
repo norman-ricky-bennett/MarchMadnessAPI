@@ -78,6 +78,10 @@ namespace MarchMadness.Services
                                
                             }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                        ).ToList()
+>>>>>>> 307ae8e6d4a1655c968327b694092e86a415d188
                         ).ToList(),
                         Coach =
                         ctx
@@ -91,9 +95,12 @@ namespace MarchMadness.Services
                             }
                         
                         )
+<<<<<<< HEAD
 =======
                         ).ToList()
 >>>>>>> 02e1ed31a202094728184ae0c206f7fcb2ad278c
+=======
+>>>>>>> 307ae8e6d4a1655c968327b694092e86a415d188
                         //List of PlayerListItem as a prop in TeamDetail
                         //Add TeamId to your Player class
                         //Do a nested query here.
