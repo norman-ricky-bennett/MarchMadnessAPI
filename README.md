@@ -6,7 +6,7 @@ a web API to track teams, stats, and games through March Madness.
 **In this project we learned:**  
 
 :white_check_mark: Planning and execution of a sprint using Agile methodology  
-:white_check_mark: Collaboration as a team using GitHub to create an Minimum Viable Product (MVP)  
+:white_check_mark: Collaboration as a team using GitHub to create a Minimum Viable Product (MVP)  
 :white_check_mark: Implementation of n-tier structure  
 :white_check_mark: Creation of API endpoints  
 :white_check_mark: Testing and debugging APIs  
