@@ -75,7 +75,9 @@ namespace MarchMadness.Services
                         .Select(p =>
                             new PlayerListItem
                             {
-                               
+                                Name = p.Name,
+                                Position = p.Position,
+                                SeasonTotalPoints = p.SeasonTotalPoints,
                             }
                         ).ToList(),
                         Coach =
