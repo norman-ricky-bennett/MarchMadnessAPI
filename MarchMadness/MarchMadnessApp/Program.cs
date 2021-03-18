@@ -16,9 +16,6 @@ namespace MarchMadnessApp
             ProgramUI UI = new ProgramUI(service);
 
             UI.Run();
-
-
-
         }
     }
 }
