@@ -3,7 +3,7 @@
 This is a Blue Badge Web API team project. This project uses C#/.NET to create
 a web API to track teams, stats, and games through March Madness.  
 
-**bold text**In this project we learned:**  
+**In this project we learned:**  
 
 :white_check_mark: Planning and execution of a sprint using Agile methodology  
 :white_check_mark: Collaboration as a team using GitHub to create an MVP  
@@ -14,11 +14,11 @@ a web API to track teams, stats, and games through March Madness.
 
 ## How It Works
 
-Testing API endpoints can be done using *italicized text* Postman.  
+Testing API endpoints can be done using *Postman.*  
 
 In Postman, create a new environment called "March Madness API".
 
-Create a new **bold text**Get Request**
+Create a new **Get Request**
 
 ## Project Links
 
@@ -28,6 +28,6 @@ Create a new **bold text**Get Request**
 
 ### Contributors
 
-* [Sterling Cole](https://www.linkedin.com/in/sterling-cole-087381207/)
-* [Yatzuri Rojas](https://www.linkedin.com/in/yatzuri-rojas-49939b209/)
-* [Norman "Ricky" Bennett](https://www.linkedin.com/in/norman-ricky-bennett/)
+* [*Sterling Cole*](https://www.linkedin.com/in/sterling-cole-087381207/)
+* [*Yatzuri Rojas*](https://www.linkedin.com/in/yatzuri-rojas-49939b209/)
+* [*Norman "Ricky" Bennett*](https://www.linkedin.com/in/norman-ricky-bennett/)
