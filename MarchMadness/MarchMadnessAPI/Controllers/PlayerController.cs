@@ -11,7 +11,7 @@ using System.Web.Http;
 namespace MarchMadnessAPI.Models
 {
     [Authorize]
-    public class PlayersController : ApiController
+    public class PlayerController : ApiController
     {
         public IHttpActionResult Get()
         {
@@ -19,6 +19,7 @@ namespace MarchMadnessAPI.Models
             var players = playerService.GetPlayers();
             return Ok(players);
         }
+        [HttpPost]
         public IHttpActionResult Post(PlayerCreate player)
         {
             if (!ModelState.IsValid)

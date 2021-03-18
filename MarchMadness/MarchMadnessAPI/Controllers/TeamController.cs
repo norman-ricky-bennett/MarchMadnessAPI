@@ -39,5 +39,25 @@ namespace MarchMadnessAPI.Controllers
 
             return Ok();
         }
+        [HttpPut]
+        public IHttpActionResult UpdateTeam(TeamEdit team)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var service = CreateTeamService();
+
+            if (!service.UpdateTeam(team))
+                return InternalServerError();
+
+            return Ok();
+        }
+        [HttpGet]
+        public IHttpActionResult GetTeamById(int id)
+        {
+            TeamService teamService = CreateTeamService();
+            var team = teamService.GetTeamById(id);
+            return Ok(team);
+        }
     }
 }

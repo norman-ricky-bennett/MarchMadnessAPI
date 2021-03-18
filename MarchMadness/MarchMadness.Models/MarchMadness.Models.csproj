@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CoachCreate.cs" />
+    <Compile Include="CoachEdit.cs" />
     <Compile Include="CoachListItem.cs" />
     <Compile Include="PlayerCreate.cs" />
     <Compile Include="PlayerDetail.cs" />
@@ -65,6 +66,8 @@
     <Compile Include="StadiumDetail.cs" />
     <Compile Include="StadiumListItem.cs" />
     <Compile Include="TeamCreate.cs" />
+    <Compile Include="TeamDetail.cs" />
+    <Compile Include="TeamEdit.cs" />
     <Compile Include="TeamListItem.cs" />
   </ItemGroup>
   <ItemGroup>

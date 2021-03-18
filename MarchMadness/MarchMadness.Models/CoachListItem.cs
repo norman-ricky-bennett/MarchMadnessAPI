@@ -10,8 +10,9 @@ namespace MarchMadness.Models
     {
         public int CoachID { get; set; }
         public string CoachName { get; set; }
-        public int SeasonRecord { get; set; }
-        public int OverallRecord { get; set; }
-        public int MarchMadnessRecord { get; set; }
+        public string SeasonRecord { get; set; }
+        public string OverallRecord { get; set; }
+        public string MarchMadnessRecord { get; set; }
+        public int TeamId { get; set; }
     }
 }

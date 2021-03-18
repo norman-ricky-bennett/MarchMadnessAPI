@@ -53,6 +53,68 @@ namespace MarchMadness.Services
                 return query.ToArray();
             }
         }
+
+        public TeamDetail GetTeamById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity = 
+                    ctx 
+                    .Teams
+                    .Single(e => e.TeamId == id && e.OwnerId == _userId);
+                return
+                    new TeamDetail
+                    {
+                        TeamId = entity.TeamId,
+                        TeamName = entity.TeamName,
+                        TeamSeed = entity.TeamSeed,
+                        Players = 
+                        ctx
+                        .Players
+                        .Where(p => p.TeamId == entity.TeamId)
+                        .Select(p =>
+                            new PlayerListItem
+                            {
+                                Name = p.Name,
+                                Position = p.Position,
+                                SeasonTotalPoints = p.SeasonTotalPoints,
+                            }
+                        ).ToList(),
+                        Coach =
+                        ctx
+                        .Coach
+                        .Where(c => c.TeamId == entity.TeamId)
+                        .Select(c =>
+                            new CoachListItem
+                            {
+                                CoachName = c.CoachName,
+                                SeasonRecord = c.SeasonRecord,
+                                OverallRecord = c.OverallRecord,
+                                MarchMadnessRecord = c.MarchMadnessRecord,
+                            }
+                        ).ToList(),
+
+                        //List of PlayerListItem as a prop in TeamDetail
+                        //Add TeamId to your Player class
+                        //Do a nested query here.
+                    };
+            }
+        }
+        public bool UpdateTeam(TeamEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Teams
+                        .Single(e => e.TeamId == model.TeamId && e.OwnerId == _userId);
+                entity.TeamName = model.TeamName;
+                entity.TeamSeed = model.TeamSeed;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
     }
 }
 

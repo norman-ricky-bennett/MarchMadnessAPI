@@ -5,23 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarchMadness.Data
+namespace MarchMadness.Models
 {
-    public class Coach
+    public class CoachEdit
     {
-        [Key]
-        public int CoachId { get; set; }
-        [Required]
-        public Guid OwnerId { get; set; }
-        [Required]
         public string CoachName { get; set; }
-        [Required]
         public string SeasonRecord { get; set; }
-        [Required]
         public string OverallRecord { get; set; }
-        [Required]
         public string MarchMadnessRecord { get; set; }
-        [Required]
         public int TeamId { get; set; }
     }
 }
