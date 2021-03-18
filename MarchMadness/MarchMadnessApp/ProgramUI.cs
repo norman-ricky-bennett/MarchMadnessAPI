@@ -11,8 +11,6 @@ namespace MarchMadnessApp
     public class ProgramUI
     {
         private APIService _service;
-
-        // faux Dependency injection example (we would want to make an interface to enforce consistency between the servies if we made more than one):
         public ProgramUI(APIService service)
         {
             _service = service;
