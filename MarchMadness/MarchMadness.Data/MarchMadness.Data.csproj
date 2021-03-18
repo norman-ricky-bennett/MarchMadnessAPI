@@ -90,6 +90,10 @@
     <Compile Include="Migrations\202103181351330_Coach.Designer.cs">
       <DependentUpon>202103181351330_Coach.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103181631363_PLayers.cs" />
+    <Compile Include="Migrations\202103181631363_PLayers.Designer.cs">
+      <DependentUpon>202103181631363_PLayers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -110,6 +114,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202103181351330_Coach.resx">
       <DependentUpon>202103181351330_Coach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103181631363_PLayers.resx">
+      <DependentUpon>202103181631363_PLayers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
