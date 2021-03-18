@@ -13,5 +13,6 @@ namespace MarchMadness.Models
         public string SeasonRecord { get; set; }
         public string OverallRecord { get; set; }
         public string MarchMadnessRecord { get; set; }
+        public int TeamId { get; set; }
     }
 }

@@ -12,5 +12,6 @@ namespace MarchMadness.Models
         public string TeamName { get; set; }
         public int TeamSeed { get; set; }
         public List<PlayerListItem> Players { get; set; }
+        public List<CoachListItem> Coach { get; set; }
     }
 }
