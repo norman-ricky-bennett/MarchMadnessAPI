@@ -31,3 +31,5 @@ on localhost, you can begin testing endpoints in Postman.
 * [*Sterling Cole*](https://www.linkedin.com/in/sterling-cole-087381207/)
 * [*Yatzuri Rojas*](https://www.linkedin.com/in/yatzuri-rojas-49939b209/)
 * [*Norman "Ricky" Bennett*](https://www.linkedin.com/in/norman-ricky-bennett/)
+
+#### Eleven Fifty Academy - Software Development 76 - January 2021 to April 2021
