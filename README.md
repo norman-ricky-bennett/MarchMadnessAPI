@@ -3,7 +3,7 @@
 This is a Blue Badge Web API team project. This project uses C#/.NET to create
 a web API to track teams, stats, and games through March Madness.  
 
-In this project we learned:  
+**bold text**In this project we learned:**  
 
 :white_check_mark: Planning and execution of a sprint using Agile methodology  
 :white_check_mark: Collaboration as a team using GitHub to create an MVP  
@@ -11,6 +11,14 @@ In this project we learned:
 :white_check_mark: Creation of API endpoints  
 :white_check_mark: Testing and debug APIs  
 :white_check_mark: Using foreign keys to connect data tables  
+
+## How It Works
+
+Testing API endpoints can be done using *italicized text* Postman.  
+
+In Postman, create a new environment called "March Madness API".
+
+Create a new **bold text**Get Request**
 
 ## Project Links
 
