@@ -10,6 +10,7 @@ namespace MarchMadness.Models
     public class PlayerDetail
     {
         public int PlayerId { get; set; }
+        public int TeamId { get; set; }
         
         public string Name { get; set; }
         

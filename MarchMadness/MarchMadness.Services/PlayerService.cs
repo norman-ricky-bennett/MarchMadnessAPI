@@ -25,7 +25,8 @@ namespace MarchMadness.Services
                     OwnerId = _userId,
                     Name = model.Name,
                     Position = model.Position,
-                    SeasonTotalPoints = model.SeasonTotalPoints
+                    SeasonTotalPoints = model.SeasonTotalPoints,
+                    TeamId = model.TeamId
                 };
 
             using (var ctx = new ApplicationDbContext())

@@ -5,13 +5,12 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarchMadness.WebAPI", "MarchMadnessAPI\MarchMadness.WebAPI.csproj", "{5DEA5856-8CA4-462B-ABB9-318A8AB67FD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarchMadness.Data", "MarchMadness.Data\MarchMadness.Data.csproj", "{3390D136-0B41-47BB-9E6A-EDB99DD9C0DD}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarchMadness.Models", "MarchMadness.Models\MarchMadness.Models.csproj", "{43661BAD-2F93-47BB-9549-0B3D9934079D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarchMadness.Services", "MarchMadness.Services\MarchMadness.Services.csproj", "{7FD92F57-A06D-4422-A32E-54C007D641A3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarchMadnessApp", "MarchMadnessApp\MarchMadnessApp.csproj", "{260511F6-14A0-4270-99B7-984A369A3287}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarchMadness.Data", "MarchMadness.Data\MarchMadness.Data.csproj", "{3390D136-0B41-47BB-9E6A-EDB99DD9C0DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +22,6 @@ Global
 		{5DEA5856-8CA4-462B-ABB9-318A8AB67FD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DEA5856-8CA4-462B-ABB9-318A8AB67FD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DEA5856-8CA4-462B-ABB9-318A8AB67FD8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3390D136-0B41-47BB-9E6A-EDB99DD9C0DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3390D136-0B41-47BB-9E6A-EDB99DD9C0DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3390D136-0B41-47BB-9E6A-EDB99DD9C0DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3390D136-0B41-47BB-9E6A-EDB99DD9C0DD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{43661BAD-2F93-47BB-9549-0B3D9934079D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{43661BAD-2F93-47BB-9549-0B3D9934079D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43661BAD-2F93-47BB-9549-0B3D9934079D}.Release|Any CPU.ActiveCfg = Release|Any CPU
