@@ -78,6 +78,19 @@ namespace MarchMadness.Services
                                
                             }
                         ).ToList()
+                        ).ToList(),
+                        Coach =
+                        ctx
+                        .Coach
+                        .Where(c => c.TeamId == entity.TeamId)
+                        .Select(ctx =>
+                            new CoachListItem
+                            {
+                                CoachName = e.CoachName,
+
+                            }
+                        
+                        )
                         //List of PlayerListItem as a prop in TeamDetail
                         //Add TeamId to your Player class
                         //Do a nested query here.
