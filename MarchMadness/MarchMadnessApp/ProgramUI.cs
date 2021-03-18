@@ -68,7 +68,7 @@ namespace MarchMadnessApp
 
             Console.WriteLine("Loading...");
             Thread.Sleep(50);
-            Team team = _service.GetAsync<Team>($"https://swapi.dev/api/people/{id}/").Result;
+            Team team = _service.GetAsync<Team>($"https://localhost:44342/api/Team/{id}").Result;
             Console.Clear();
 
             Console.WriteLine($"\n\n{team.TeamName} is a {team.TeamSeed}seed team and is currently being led by coach {team.Coachname_Id}");
@@ -84,7 +84,7 @@ namespace MarchMadnessApp
 
             Console.WriteLine("Loading...");
             Thread.Sleep(50);
-            Player player = _service.GetAsync<Player>($"https://swapi.dev/api/planets/{id}/").Result;
+            Player player = _service.GetAsync<Player>($"https://localhost:44342/api/Player/{id}").Result;
             Console.Clear();
 
             Console.WriteLine($"\n\n{player.Name} is a {player.Position} with a total of {player.SeasonTotalPoints} points, {player.SeasonRebounds} rebounds, and {player.SeasonAssists} asists this season");
@@ -100,7 +100,7 @@ namespace MarchMadnessApp
 
             Console.WriteLine("Loading...");
             Thread.Sleep(50);
-            Coach coach = _service.GetAsync<Coach>($"https://swapi.dev/api/starships/{id}/").Result;
+            Coach coach = _service.GetAsync<Coach>($"https://localhost:44342/api/Coach/{id}").Result;
             Console.Clear();
 
             if (coach == default)
@@ -123,7 +123,7 @@ namespace MarchMadnessApp
 
             Console.WriteLine("Loading...");
             Thread.Sleep(50);
-            Stadium stadium = _service.GetAsync<Stadium>($"https://swapi.dev/api/planets/{id}/").Result;
+            Stadium stadium = _service.GetAsync<Stadium>($"https://localhost:44342/api/Stadium/{id}").Result;
             Console.Clear();
 
             Console.WriteLine($"\n\n{stadium.Name} stadium is a located in {stadium.Location}, and it can hold a total of {stadium.Capacity} fans at once. This stadium was built in {stadium.BuildDate}.");
