@@ -9,16 +9,16 @@ a web API to track teams, stats, and games through March Madness.
 :white_check_mark: Collaboration as a team using GitHub to create an MVP  
 :white_check_mark: Implementation of n-tier structure  
 :white_check_mark: Creation of API endpoints  
-:white_check_mark: Testing and debug APIs  
+:white_check_mark: Testing and debugging APIs  
 :white_check_mark: Using foreign keys to connect data tables  
 
 ## How It Works
 
 Testing API endpoints can be done using *Postman.*  
 
-In Postman, create a new environment called "March Madness API".
-
-Create a new **Get Request**
+You will first need to clone the repository, open the March Madness folder,
+and run the MarchMadnessAPI solution in Visual Studio. Once the project is running
+on localhost, you can begin testing endpoints in Postman.
 
 ## Project Links
 
